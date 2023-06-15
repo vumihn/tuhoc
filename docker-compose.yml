@@ -1,0 +1,23 @@
+version: '3.2'
+
+services:
+  droplets:
+    build: ./
+    environment:
+      - MONGO_URI=mongodb://mongo
+      - LOG_LEVEL=info
+    ports:
+      - "8080:8080"
+    links:
+      - mongo
+    networks:
+      - droplets_net
+  mongo:
+    image: mongo:3-stretch
+    ports:
+      - "27017:27017"
+    networks:
+      - droplets_net
+
+networks:
+  droplets_net:
