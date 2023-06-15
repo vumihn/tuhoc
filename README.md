@@ -8,7 +8,7 @@ them line
 tu hoc 
 
 
-tu hoc2
+tu hoc 2
 
 tu hoc 3
 
@@ -18,4 +18,4 @@ tu hoc5
 
 tu hoc 6
 
-tu hoc 9
+
